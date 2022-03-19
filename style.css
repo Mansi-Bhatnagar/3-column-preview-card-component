@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-color: hsl(0, 0%, 95%);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 8px 0 0 8px;
+}
+.card2{
+    background-color: hsl(184, 100%, 22%);
+}
+.card3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 8px 8px 0;
+}
+.card{
+    height:480px;
+    width:300px;
+}
+.image img{
+    margin-top: 45px;
+    margin-left: 45px;
+}
+.heading h1{
+    font-family:'Big Shoulders Display', cursive;
+    color:hsl(0, 0%, 95%);
+    font-weight: 700px;
+    font-size: 40px;
+    margin-left: 45px;
+    margin-top: 35px;
+
+}
+.paragraph p{
+    font-family: 'Lexend Deca', sans-serif;
+    color:hsla(0, 0%, 100%, 0.75);
+    font-weight: 400px;
+    font-size: 15px;
+    margin-left: 45px;
+    margin-top: 25px;
+    margin-right: 45px;
+    line-height: 1.8em;
+
+}
+.button{
+    width:140px;
+    height:45px;
+    background-color:  hsl(0, 0%, 95%);
+    margin-left: 45px;
+    margin-top: 55px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button span{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+.b1 span{
+    color:hsl(31, 77%, 52%);
+}
+.b2 span{
+    color:hsl(184, 100%, 22%)
+}
+.b3 span{
+    color:hsl(179, 100%, 13%)
+    ;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+.button:hover span{
+    color: hsl(0, 0%, 95%);
+}
+@media (max-width:920px){
+    .container{
+        flex-wrap: wrap;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        height: max-content;
+    }
+    .card1{
+        border-radius: 8px 8px 0 0;
+    }
+    .card3{
+        border-radius: 0 0 8px 8px;
+    }
+    .card{
+        width:325px;
+    }
+
+}
